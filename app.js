@@ -1,14 +1,34 @@
 var pronoun = ['the','our'];
 var adj = ['great', 'big' ];
 var noun = ['jogger','racoon'];
-var dom = ['.com','.net','.org'];
+var dom = ['.com','.net'];
 
-var first = pronoun[Math.floor(Math.random() * pronoun.length)];
-var second = adj[Math.floor(Math.random() * adj.length)];
+
 var third = noun[Math.floor(Math.random() * noun.length)];
 var fourth = dom[Math.floor(Math.random() * dom.length)];
 
-var dominio = first + second + third + fourth;
+for (let i = 0; i < pronoun.length; i++) {
+    var first = pronoun[i];    
+    for (let j = 0; j < adj.length; j++) {
+        var second = adj[j];
+    
+        for (let k = 0; k < noun.length; k++) {
+            var third = noun[k];
+        
+            for (let l = 0; l < dom.length; l++) {
+                var fourth = dom[l];
+                console.log(first + second + third + fourth);                         
+            }
+        }
+    }                 
+}
 
-console.log(dominio);
+
+
+
+
+
+
+
+
 
